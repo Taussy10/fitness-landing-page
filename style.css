@@ -1,3 +1,4 @@
+/* Global styles */
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +6,7 @@
   color: white;
 }
 
+/* Background and font styles */
 .body {
   background-image: url(images/img.jpg);
   background-repeat: no-repeat;
@@ -13,6 +15,7 @@
   font-weight: bold;
 }
 
+/* Navigation styles */
 nav {
   display: flex;
   align-items: center;
@@ -22,9 +25,18 @@ nav {
   flex: 0.4;
 }
 
-.name {
+.left img {
+  width: 82px;
   position: relative;
-  left: 36px;
+  left: 110px;
+  color: white;
+  background-color: white;
+}
+
+.name {
+  font-size: 30px;
+  position: relative;
+  left: 110px;
 }
 
 .center {
@@ -59,6 +71,7 @@ nav {
   bottom: 20px;
 }
 
+/* Button styles */
 .button {
   margin: 0 9px;
   background-color: black;
@@ -73,6 +86,7 @@ nav {
   background-color: rgb(58, 58, 58);
 }
 
+/* Form container styles */
 .container {
   border: 3px white solid;
   margin: 10% auto;
@@ -82,6 +96,7 @@ nav {
   border-radius: 28px;
 }
 
+/* Form input styles */
 .formgroup input {
   text-align: center;
   display: block;
@@ -95,62 +110,83 @@ nav {
   color: black;
 }
 
+/* Form heading styles */
 .container h1 {
   text-align: center;
   font-size: 28px;
 }
 
-.container button {
-  display: block;
-  width: 50%;
-  margin: auto;
-}
-
 /* Media Queries */
 
+/* Adjustments for screens up to 320px */
+@media (max-width: 320px) {
+  .right {
+    display: none;
+  }
 
+  .center {
+    display: none;
+  }
 
+  .left img {
+    width: 72px;
+    left: 85px;
+  }
 
+  .name {
+    font-size: 24px;
+    left: 85px;
+  }
 
-@media screen and (max-device-width: 480px)
-    and (orientation: portrait) {
-      .container {
-        margin: 30% auto;
-        padding: 10%;
-      }
-    
-      .button {
-        font-size: 12px;
-        padding: 3px 10px;
-      }
-    
-      .formgroup input {
-        font-size: 14px;
-        padding: 3px;
-      }
-    
-      .container h1 {
-        font-size: 20px;
-      }
+  .container {
+    margin: 30% auto;
+    padding: 15%;
+  }
+
+  .formgroup input {
+    font-size: 14px;
+    padding: 3px;
+  }
+
+  .container h1 {
+    font-size: 20px;
+  }
 }
-@media screen and (max-device-height: 560px)
-    and (orientation: portrait) {
-      .container {
-        margin: 30% auto;
-        padding: 10%;
-      }
-    
-      .button {
-        font-size: 12px;
-        padding: 3px 10px;
-      }
-    
-      .formgroup input {
-        font-size: 14px;
-        padding: 3px;
-      }
-    
-      .container h1 {
-        font-size: 20px;
-      }
+
+
+
+/* Adjustments for screens up to 320px */
+@media (max-width: 320px) {
+  .right {
+    display: none;
+  }
+
+  .center {
+    display: none;
+  }
+
+  .left img {
+    width: 72px;
+    left: 85px;
+  }
+
+  .name {
+    font-size: 24px;
+    left: 85px;
+  }
+
+  .container {
+    margin: 30% auto;
+    padding: 15%;
+  }
+
+  .formgroup input {
+    font-size: 14px;
+    padding: 3px;
+  }
+
+  .container h1 {
+    font-size: 20px;
+  }
 }
+/* hello */
