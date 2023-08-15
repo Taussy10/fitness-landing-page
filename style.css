@@ -119,7 +119,9 @@ nav {
 /* Media Queries */
 
 /* Adjustments for screens up to 320px */
-@media (max-width: 320px) {
+/*min-width: if  it goes <=320 then it will change
+  max-width: if it goes >=320 then it will change  */
+@media (min-width: 320px) {
   .right {
     display: none;
   }
@@ -154,7 +156,7 @@ nav {
 }
 
 /* Adjustments for screens up to 375px */
-@media (max-width: 375px) {
+@media (min-width: 375px) {
   .right {
     display: none;
   }
@@ -189,7 +191,8 @@ nav {
 }
 
 /* Adjustments for screens up to 425px */
-@media (max-width: 425px) {
+
+@media (min-width: 425px) {
   .right {
     display: none;
   }
